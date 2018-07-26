@@ -39,7 +39,7 @@ class App extends Component {
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">
-              DONATIONS CATALOG &nbsp;
+              DONATIONS &nbsp;
               {localStorage.getItem("jwtToken") && (
                 <button class="btn btn-primary" onClick={this.logout}>
                   Logout
@@ -54,6 +54,8 @@ class App extends Component {
                   <th>Item</th>
                   <th>Category</th>
                   <th>Type</th>
+                  <th>Quantity</th>
+                  <th>Value</th>
                 </tr>
               </thead>
               <tbody>
